@@ -42,7 +42,8 @@ dprint('init: all server bridge modules loaded — framework=%s inventory=%s', t
 print(('^2[SD-TRAPPHONE]^0 Bridge initialised — Framework: ^3%s^0, Inventory: ^3%s^0'):format(
     framework.name, inventoryId.name or 'framework-default'))
 
--- Best-effort check of our latest GitHub release against the installed version;
--- prints an up-to-date / update-available line to the server console. Async and
--- non-fatal, so it never blocks or breaks server boot.
-version.check('sd-versions/sd-trapphone')
+-- 汉化版：原先这里会对 GitHub Releases 发起一次外网请求（api.github.com）。
+-- 国内机房访问 GitHub 极不稳定，且该请求对本服毫无运行价值，
+-- 因此整段注释掉，彻底切断对境外 CDN / API 的依赖。
+-- 需要恢复官方更新提示时，取消下一行注释即可。
+-- version.check('sd-versions/sd-trapphone')

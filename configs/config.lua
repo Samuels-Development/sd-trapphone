@@ -4,7 +4,7 @@
 -- fxmanifest files{}, so it never ships to a client. Server-only files are merged below on the
 -- server ONLY.
 local config = {
-    Locale = 'en', -- lib.locale loads locales/<Locale>.json, falling back to en per-key
+    Locale = 'zh-CN', -- 中文语言包 locales/zh-CN.json（缺失键自动回落 en）
     Debug = false, -- dev logging, target zone outlines and the /trap_* test commands; off in production
 
     -- Bridge diagnostics (bridge/shared/debug.lua): very verbose per-call prints from the

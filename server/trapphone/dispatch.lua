@@ -136,7 +136,7 @@ local function reasonText(reason)
         if text and text ~= key then return text end
     end
 
-    return ALERT.title or 'Suspected drug deal'
+    return ALERT.title or '疑似毒品交易'
 end
 
 ---Send a police alert about a player. Held back by the per-player cooldown. Raises their heat

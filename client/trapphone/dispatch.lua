@@ -21,7 +21,7 @@ end
 function dispatch.send(data)
     if type(data) ~= 'table' then return end
 
-    local title = type(data.title) == 'string' and data.title or 'Suspected drug deal'
+    local title = type(data.title) == 'string' and data.title or '疑似毒品交易'
     local message = type(data.message) == 'string' and data.message or title
     local code = type(data.code) == 'string' and data.code or '10-66'
     local coords

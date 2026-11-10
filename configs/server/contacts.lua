@@ -20,7 +20,7 @@ return {
     --   intel     (informant) price for one tip: where demand is highest right now
     List = {
         {
-            key = 'smoke', type = 'plug', name = 'Smoke', number = '555-0142',
+            key = 'smoke', type = 'plug', name = '老烟', number = '555-0142',
             unlock = { family = 'weed', level = 2 },
             model = `a_m_y_soucent_02`,
             meetups = {
@@ -33,7 +33,7 @@ return {
             },
         },
         {
-            key = 'blanca', type = 'plug', name = 'Blanca', number = '555-0177',
+            key = 'blanca', type = 'plug', name = '布兰卡', number = '555-0177',
             unlock = { family = 'coke', level = 3 },
             model = `a_f_y_bevhills_04`,
             meetups = {
@@ -46,7 +46,7 @@ return {
             },
         },
         {
-            key = 'chemist', type = 'plug', name = 'The Chemist', number = '555-0119',
+            key = 'chemist', type = 'plug', name = '化学师', number = '555-0119',
             unlock = { family = 'meth', level = 3 },
             model = `a_m_m_hillbilly_02`,
             meetups = {
@@ -59,7 +59,7 @@ return {
             },
         },
         {
-            key = 'penny', type = 'supplier', name = 'Penny', number = '555-0103',
+            key = 'penny', type = 'supplier', name = '佩妮', number = '555-0103',
             unlock = { family = 'any', level = 2 },
             model = `a_f_m_business_02`,
             meetups = {
@@ -75,50 +75,50 @@ return {
             },
         },
         {
-            key = 'ears', type = 'informant', name = 'Ears', number = '555-0166',
+            key = 'ears', type = 'informant', name = '顺风耳', number = '555-0166',
             unlock = { family = 'any', level = 3 },
             model = `a_m_o_tramp_01`,
             meetups = { { spawn = vec4(189.6, -935.1, 30.7, 150.0) } },
             intel = { price = 300 },
         },
         {
-            key = 'mrclean', type = 'launderer', name = 'Mr. Clean', number = '555-0188',
+            key = 'mrclean', type = 'launderer', name = '清洁先生', number = '555-0188',
             unlock = { family = 'any', level = 5 },
             model = `a_m_m_business_01`,
             meetups = { { spawn = vec4(1136.0, -989.6, 46.1, 280.0) } },
         },
         {
-            key = 'ghost', type = 'fixer', name = 'Ghost', number = '555-0131',
+            key = 'ghost', type = 'fixer', name = '鬼影', number = '555-0131',
             unlock = { family = 'any', level = 7 },
             model = `s_m_y_dealer_01`,
             meetups = { { spawn = vec4(707.3, -966.9, 30.4, 270.0) } },
         },
         {
-            key = 'oghollow', type = 'gang', gang = 'ballas', name = 'OG Hollow', number = '555-0151',
+            key = 'oghollow', type = 'gang', gang = 'ballas', name = '老霍', number = '555-0151',
             unlock = { family = 'any', level = 4 },
             model = `g_m_y_ballaorig_01`,
             meetups = { { spawn = vec4(84.9, -1958.4, 21.1, 320.0) } },
         },
         {
-            key = 'bigg', type = 'gang', gang = 'families', name = 'Big G', number = '555-0152',
+            key = 'bigg', type = 'gang', gang = 'families', name = '大G', number = '555-0152',
             unlock = { family = 'any', level = 4 },
             model = `g_m_y_famfor_01`,
             meetups = { { spawn = vec4(-175.4, -1614.2, 33.8, 260.0) } },
         },
         {
-            key = 'elviejo', type = 'gang', gang = 'vagos', name = 'El Viejo', number = '555-0153',
+            key = 'elviejo', type = 'gang', gang = 'vagos', name = '老艾', number = '555-0153',
             unlock = { family = 'any', level = 4 },
             model = `g_m_y_mexgoon_03`,
             meetups = { { spawn = vec4(330.9, -2012.6, 22.4, 50.0) } },
         },
         {
-            key = 'santo', type = 'gang', gang = 'marabunta', name = 'Santo', number = '555-0154',
+            key = 'santo', type = 'gang', gang = 'marabunta', name = '桑托', number = '555-0154',
             unlock = { family = 'any', level = 5 },
             model = `g_m_y_salvaboss_01`,
             meetups = { { spawn = vec4(1295.9, -1730.4, 54.0, 110.0) } },
         },
         {
-            key = 'chains', type = 'gang', gang = 'lost', name = 'Chains', number = '555-0155',
+            key = 'chains', type = 'gang', gang = 'lost', name = '铁链', number = '555-0155',
             unlock = { family = 'any', level = 5 },
             model = `g_m_y_lost_02`,
             meetups = { { spawn = vec4(982.2, -103.4, 74.8, 220.0) } },

@@ -7,9 +7,9 @@
 -- keys (gram, quarter, ounce, kilo).
 return {
     Families = {
-        weed = { label = 'Weed', color = '#6fcf4a' },
-        coke = { label = 'Coke', color = '#e9eef5' },
-        meth = { label = 'Meth', color = '#6fd3ff' },
+        weed = { label = '大麻', color = '#6fcf4a' },
+        coke = { label = '可卡因', color = '#e9eef5' },
+        meth = { label = '冰毒', color = '#6fd3ff' },
     },
 
     -- [item name] = { family, unit, prop?, largePackage? }
@@ -33,9 +33,9 @@ return {
 
     -- How a unit reads on the phone ("3 x gram of Coke").
     Units = {
-        gram = { label = 'gram', short = 'g' },
-        quarter = { label = 'quarter', short = 'qtr' },
-        ounce = { label = 'ounce', short = 'oz' },
-        kilo = { label = 'brick', short = 'kg' },
+        gram = { label = '克', short = '克' },
+        quarter = { label = '七克', short = '7g' },
+        ounce = { label = '盎司', short = 'oz' },
+        kilo = { label = '砖', short = 'kg' },
     },
 }

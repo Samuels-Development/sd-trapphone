@@ -7,15 +7,15 @@ return {
     CanPassNumbers = true, -- a special contact's number can be handed to a player standing next to you
 
     Types = {
-        plug = { label = 'Plug', actions = { 'order', 'message' } },
-        supplier = { label = 'Supplier', actions = { 'order', 'message' } },
-        gang = { label = 'Shot caller', actions = { 'bribe', 'standing', 'message' } },
-        informant = { label = 'Informant', actions = { 'intel', 'message' } },
-        launderer = { label = 'Launderer', actions = { 'wash', 'message' } },
-        fixer = { label = 'Fixer', actions = { 'market', 'message' } },
-        regular = { label = 'Regular', actions = { 'message' } },
-        player = { label = 'Number', actions = { 'message' } },
-        custom = { label = 'Contact', actions = { 'message' } },
+        plug = { label = '供货源', actions = { 'order', 'message' } },
+        supplier = { label = '供应商', actions = { 'order', 'message' } },
+        gang = { label = '帮派话事人', actions = { 'bribe', 'standing', 'message' } },
+        informant = { label = '线人', actions = { 'intel', 'message' } },
+        launderer = { label = '洗钱人', actions = { 'wash', 'message' } },
+        fixer = { label = '掮客', actions = { 'market', 'message' } },
+        regular = { label = '熟客', actions = { 'message' } },
+        player = { label = '号码', actions = { 'message' } },
+        custom = { label = '联系人', actions = { 'message' } },
     },
 
     MeetRadius = 60.0, -- the contact appears once you are this close to the meeting place

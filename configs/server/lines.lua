@@ -1,267 +1,267 @@
--- SERVER-ONLY: what contacts and gangs text. One line is picked at random from a list each
--- time. Written the way people typed on a keypad in 2003: short, lower case, few vowels spared.
+-- 仅服务端：联络人和帮派发来的短信。每次从一组里随机抽一条。
+-- 语感模仿老式按键机发短信：短、口语、能省的字都省。
 --
--- Placeholders are filled in by server/trapphone/contacts.lua and turf.lua and must stay in
--- the order given in the comment above each list. A list with no placeholder note takes none.
+-- 占位符由 server/trapphone/contacts.lua 和 turf.lua 按每组上方注释给出的顺序填充，顺序不能改。
+-- 没标占位符的组不带参数。
 return {
-    -- A contact reaching out for the first time, by contact type. %s = the area they wait in.
+    -- 联络人第一次主动联系，按类型区分。%s = 他们等你的地点。
     intro = {
         plug = {
-            'heard u been movin. i got weight. come c me in %s, marked it 4 u',
-            'yo. friend of a friend says ur solid. %s. come alone',
-            'u need a real connect not crumbs. im in %s rite now',
-            'got ur number off a customer. lets talk bizness. %s',
-            'word is u sell out every nite. i can fix that. meet me %s',
+            '听说你在出货。我手里有大货。来 %s 找我，给你标了',
+            '喂。朋友的朋友说你还靠得住。%s。一个人来',
+            '你要的是真上家，不是碎货。我现在就在 %s',
+            '号码是从客人那拿的。谈生意。%s',
+            '都说你每天都能卖光。这事我能解决。%s 见',
         },
         supplier = {
-            'hi hun. u need bags n scales? i do bulk. im at %s',
-            'ur gonna need supplies if u keep growin. come by %s',
-            'i sell what the corner shop wont. %s, dont b long',
-            'heard ur weighin by eye. come c me in %s b4 u lose money',
+            '小兄弟。要袋子要秤吗？我走量。我在 %s',
+            '你要继续做大，就得备货。来 %s 一趟',
+            '我卖的东西便利店里没有。%s，别磨蹭',
+            '听说你凭眼估克数。来 %s 找我，趁还没亏光',
         },
         gang = {
-            'u been eatin on our blocks. time we met. %s',
-            'the old heads wanna c ur face. %s. dont make us come 2 u',
-            'u sell round here u talk 2 me first. %s',
-            'we c u. come 2 %s n we can keep it friendly',
-            'respect goes 2 ways. show up in %s',
+            '你一直在我们的街区吃饭。该见一面了。%s',
+            '老家伙们想看看你的脸。%s。别逼我们上门',
+            '在这片卖，先跟我谈。%s',
+            '我们看着你。来 %s，大家还能好好说话',
+            '尊重是互相的。%s 露个面',
         },
         informant = {
-            'psst. i hear things. things u wanna kno. %s',
-            'i kno where they r buyin 2nite. find me in %s',
-            'got ears all over town. small fee. %s',
-            'u dont kno me but i kno ur corners. come 2 %s',
+            '嘘。我听到些事。你会想知道的事。%s',
+            '我知道他们今晚在哪买。来 %s 找我',
+            '满城都是我的耳朵。收点小钱。%s',
+            '你不认识我，但我认识你的街角。来 %s',
         },
         launderer = {
-            'that money smells. i can make it smell nice. %s',
-            'u got a cash problem. i got a spin cycle. meet me %s',
-            'a man with ur income needs a good cleaner. %s',
+            '那笔钱有味道。我能让它干净。%s',
+            '你有现金的麻烦。我有甩干的桶。来 %s 见我',
+            '你这种收入的人，需要个好的清洗人。%s',
         },
         fixer = {
-            'need things that dont come with a receipt? %s',
-            'i get things. all kinds. come 2 %s n keep it quiet',
-            'heard u r some1 now. some1 needs tools. %s',
+            '需要不带小票的东西吗？%s',
+            '我什么都能弄到。来 %s，别出声',
+            '听说你现在算个人物了。有人需要工具。%s',
         },
     },
 
-    -- Right after the first meeting, by contact type.
+    -- 第一次见面刚结束，按类型区分。
     met = {
         plug = {
-            'good 2 meet u. txt me when u need a re up',
-            'save this number. order thru the fone, pay when u c me',
-            'dont txt me bout nothin but bizness',
+            '幸会。要补货就发短信',
+            '把这个号存下。在手机上下单，见面付钱',
+            '除了生意，别发别的',
         },
         supplier = {
-            'nice meetin u hun. txt ur list any time',
-            'u kno where i am now. order on the fone n come get it',
+            '很高兴认识你。单子随时发',
+            '现在你知道我在哪了。手机下单，过来拿',
         },
         gang = {
-            'now we kno each other. stay on the rite side of us',
-            'u want peace on our blocks u kno who 2 pay',
-            'dont make me regret givin u this number',
+            '现在我们认识了。站对边',
+            '想在我们的街区上太平，你清楚该给谁钱',
+            '别让我后悔给你这个号',
         },
         informant = {
-            'u got my number. tips cost. no refunds',
-            'txt me when u wanna kno where the money is',
+            '你有我号了。情报要钱。不退',
+            '想知道钱在哪，就发短信',
         },
         launderer = {
-            'marked the laundry 4 u. bring it dirty, leave clean',
-            'come by the shop any time. i take my cut, u take the rest',
+            '洗衣房给你标好了。脏的带来，干净的带走',
+            '随时来店里。我拿我的份，你拿剩下的',
         },
         fixer = {
-            'marked the back room 4 u. knock twice',
-            'my guy is in the back room. tell him i sent u',
+            '后屋给你标好了。敲两下',
+            '我的人在后面。跟他说是我介绍的',
         },
     },
 
     order = {
-        -- %s = the area to collect in, %d = the total to bring.
+        -- %s = 取货地点，%d = 要带的总价。
         confirm = {
-            'ok. %s. bring $%d cash, no small talk',
-            'got it. meet me %s. $%d n its urs',
-            'packin it up now. %s. dont 4get the $%d',
-            'cool. b in %s. $%d, count it b4 u come',
-            'i can do that. %s, $%d. dont b late',
+            '行。%s。带 $%d 现金，别废话',
+            '记下了。%s 见我。$%d 就是你的',
+            '正在装。%s。别忘了 $%d',
+            '好。到 %s。$%d，来之前数清楚',
+            '这单能做。%s，$%d。别迟到',
         },
         collected = {
-            'pleasure. dont txt me 4 a bit',
-            'all there. go make ur money',
-            'good doin bizness. b safe out there',
-            'dont open it on the street',
+            '合作愉快。这段时间别发我',
+            '都齐了。去赚钱吧',
+            '好买卖。外面小心',
+            '街上别拆开',
         },
-        -- %d = what the order costs.
+        -- %d = 这单的价格。
         broke = {
-            'u r short. $%d or dont waste my time',
-            'i said $%d. come back when u got it',
-            'this aint a charity. $%d',
+            '你钱不够。$%d，别浪费我时间',
+            '我说了 $%d。钱够了再来',
+            '我这不是做善事。$%d',
         },
-        -- %d = minutes until they will take another order.
+        -- %d = 还要多少分钟才接下一单。
         cooldown = {
-            'slow down. hit me in %d min',
-            'i just sorted u out. %d more min',
-            'cant b seen with u that often. %d min',
+            '慢点。%d 分钟后再发我',
+            '刚给你安排完。再等 %d 分钟',
+            '不能这么勤跟你会面。%d 分钟',
         },
         waiting = {
-            'im still waitin on u 4 the last one',
-            'come get what u ordered first',
+            '上一单我还等着你呢',
+            '先把订的拿走',
         },
         cantCarry = {
-            'u cant carry all that. make room n come back',
-            'ur pockets r full. sort it out',
+            '你拿不下这么多。腾出位置再来',
+            '你口袋满了。自己想办法',
         },
     },
 
     meet = {
-        -- %s = the area they are waiting in.
+        -- %s = 他们等你的地点。
         reminder = {
-            'still here. %s. not 4 long tho',
-            'where r u?? %s',
-            'clock is tickin. %s',
-            'u comin or not. %s',
+            '还在。%s。不过不会久',
+            '你在哪？%s',
+            '时间在走。%s',
+            '你到底来不来。%s',
         },
         missed = {
-            'u didnt show. 4get it',
-            'waited long enuf. im gone',
-            'dont waste my time again',
-            'no show. nice 1',
+            '你没出现。算了',
+            '等够了。我走了',
+            '别再浪费我时间',
+            '放鸽子。真有你的',
         },
     },
 
     intel = {
-        -- %s = the area, %s = the product.
+        -- %s = 地点，%s = 货品。
         tip = {
-            'over in %s they r dyin 4 %s rite now',
-            '%s. every1 askin 4 %s. go',
-            'word is %s is dry. bring %s n name ur price',
-            'my boy says %s cant get enuf %s 2nite',
-            'try %s. ppl payin silly money 4 %s',
+            '%s 那边现在抢着要 %s',
+            '%s。所有人都在问 %s。去',
+            '听说 %s 断货了。带 %s 去，价格你自己定',
+            '我兄弟说 %s 今晚 %s 不够卖',
+            '试试 %s。那边为 %s 出价离谱',
         },
         none = {
-            'nothin movin rite now. kept ur money tho. jk. try l8r',
-            'streets r quiet. ask me again in a bit',
+            '现在没什么动静。钱我收了。开玩笑的，晚点再问',
+            '街上很安静。过阵子再问我',
         },
     },
 
     bribe = {
-        -- %d = hours of protection bought.
+        -- %d = 买到的保护小时数。
         paid = {
-            'ok. u r good on our blocks 4 %d hrs',
-            'money talks. %d hrs, nobody touches u',
-            'ill tell the boys. %d hrs of peace',
-            'smart. u got %d hrs',
+            '行。我们的街区 %d 小时不管你了',
+            '钱会说话。%d 小时，没人动你',
+            '我跟弟兄们说。%d 小时太平',
+            '聪明。你有 %d 小时',
         },
         refused = {
-            'keep ur money. we dont deal with u',
-            'u think u can buy us after what u did? nah',
-            'not from u. not 2day',
+            '把钱收起来。我们不跟你做',
+            '你觉得干了那些事还能用钱买我们？不行',
+            '不卖给你。今天不行',
         },
     },
 
     tax = {
-        -- %d = what they want.
+        -- %d = 他们要多少。
         demand = {
-            'u been eatin on our block. $%d. my boys r comin 2 collect',
-            'rent is due. $%d. dont run',
-            '$%d 4 the corner u been usin. they r on the way',
-            'nothin is free round here. $%d',
+            '你一直在我们街区吃饭。$%d。我的人来收',
+            '租金到期了。$%d。别跑',
+            '你用那个街角，$%d。他们已经在路上',
+            '这附近没有免费的。$%d',
         },
         paid = {
-            'good. keep it that way',
-            'c how easy that was',
-            'smart. u can stay. 4 now',
+            '好。就这样保持',
+            '看，多简单',
+            '聪明。你可以留下。暂时',
         },
         refused = {
-            'wrong answer',
-            'u just made it personal',
-            'ok. we do it the hard way',
-            'bad move',
+            '答错了',
+            '你把这变成私事了',
+            '行。那就来硬的',
+            '错误的一步',
         },
     },
 
     riot = {
-        -- %s = the crew's name.
+        -- %s = 帮派名。
         start = {
-            '%s r on the streets. they want blood 4 what u did',
-            'u pushed %s 2 far. they r comin',
-            '%s just put the word out. all of them',
+            '%s 全出来了。他们要你为干的事流血',
+            '你把 %s 逼太狠了。他们来了',
+            '%s 刚放话。全部人',
         },
-        -- %d = this wave, %d = how many waves.
+        -- %d = 这一波，%d = 一共几波。
         wave = {
-            'more of them comin. %d of %d',
-            'here they come again. %d of %d',
+            '又来人了。第 %d 波，共 %d 波',
+            '他们又上来了。第 %d 波，共 %d 波',
         },
-        -- %s = the crew's name.
+        -- %s = 帮派名。
         over = {
-            '%s pulled back. dont think its 4gotten',
-            'its over. %s buried enuf 2day',
+            '%s 撤了。别以为事情过去了',
+            '结束了。%s 今天埋够了',
         },
         paidOff = {
-            'ok. its squashed. tell ur ppl 2 stay off us',
-            'money on the table. i called them off',
+            '行。事摆平了。叫你的人别碰我们',
+            '钱摆上桌了。我把他们叫回来了',
         },
     },
 
     share = {
-        -- %s = the contact's name.
+        -- %s = 联络人的名字。
         received = {
-            'some1 vouched 4 u. this is %s. save the number',
-            '%s here. ur friend says ur ok. we will c',
+            '有人给你担保。这是 %s。把号存下',
+            '%s。你朋友说你靠得住。我们看看',
         },
     },
 
-    -- Answers to whatever the player types at a contact, by contact type.
+    -- 玩家给联络人发消息时的回复，按类型区分。
     reply = {
         plug = {
-            'order thru the menu. i dont do chat',
-            'u want weight or u want a pen pal',
-            'k',
-            'not on the fone',
-            'txt me an order or dont txt me',
+            '在菜单里下单。我不聊天',
+            '你是要货还是要笔友',
+            '嗯',
+            '电话里不说这个',
+            '要么发订单，要么别发',
             '?',
         },
         supplier = {
-            'send me a list hun, not a story',
-            'lol ok. u need bags or not',
-            'busy. order on the fone',
-            'k hun',
+            '发清单给我，别讲故事',
+            '哈哈行。你到底要不要袋子',
+            '忙着。在手机上下单',
+            '嗯 小兄弟',
         },
         gang = {
-            'watch ur mouth',
-            'u wanna talk, bring money',
-            'we kno where u sell',
-            'dont txt this number 4 fun',
-            'say less',
+            '说话注意点',
+            '想谈事，带钱来',
+            '我们知道你在哪卖',
+            '别拿这个号开玩笑',
+            '知道了',
         },
         informant = {
-            'info costs. u kno the price',
-            'shh. not here',
-            'i only talk when im paid',
-            'mayb i heard somethin. mayb not',
+            '情报要钱。你知道价',
+            '嘘。这不能说',
+            '我只有收了钱才说话',
+            '也许我听到了点什么。也许没有',
         },
         launderer = {
-            'come 2 the shop. not on the fone',
-            'i dont kno what u r talkin about ;)',
-            'bring it in. we talk there',
+            '来店里。电话里不谈',
+            '我不知道你在说什么 ;)',
+            '带过来。我们那边谈',
         },
         fixer = {
-            'back room. not here',
-            'i never got this txt',
-            'come in person',
-            'del this msg',
+            '后屋。不在这说',
+            '我没收到过这条',
+            '当面来',
+            '把这消息删了',
         },
-        -- A number that has not been met yet.
+        -- 还没见过面的号码。
         unknown = {
-            'who dis',
-            'wrong number',
-            'new fone who dis',
-            'dont kno u',
+            '你谁',
+            '打错了',
+            '新号 你谁',
+            '不认识你',
             '??',
         },
-        -- Asked where to meet while a meet is pending. %s = the area.
+        -- 会面还没赴时问在哪。%s = 地点。
         where = {
-            '%s. look at ur map',
-            'i said %s',
-            '%s. hurry up',
+            '%s。看你的地图',
+            '我说了 %s',
+            '%s。快点',
         },
     },
 }

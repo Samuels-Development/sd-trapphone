@@ -60,12 +60,12 @@ return {
     -- What the phone calls each level, shown instead of numbers when ShowLevelNumbers is false.
     ShowLevelNumbers = false,
     Titles = {
-        { from = 1, label = 'Nobody' },
-        { from = 2, label = 'Corner boy' },
-        { from = 4, label = 'Runner' },
-        { from = 6, label = 'Dealer' },
-        { from = 9, label = 'Trapper' },
-        { from = 12, label = 'Supplier' },
-        { from = 16, label = 'Kingpin' },
+        { from = 1, label = '无名之辈' },
+        { from = 2, label = '街角小贩' },
+        { from = 4, label = '跑腿的' },
+        { from = 6, label = '毒贩' },
+        { from = 9, label = '掌机人' },
+        { from = 12, label = '供货商' },
+        { from = 16, label = '大毒枭' },
     },
 }

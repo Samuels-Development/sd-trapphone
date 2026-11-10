@@ -1,7 +1,7 @@
 -- SERVER-ONLY: police pressure. Alerts go out through the dispatch bridge on the seller's
 -- client (bridge/client/alert.lua), which supports the common dispatch resources.
 return {
-    PoliceJobs = { 'police', 'sheriff' },
+    PoliceJobs = { 'police', 'lssd', 'sahp' }, -- 本服实际警种：警局 / 警长 / 高速巡警
 
     CheckForPolice = false, -- true: selling can't start with fewer than RequiredPolice on duty
     RequiredPolice = 3,
@@ -30,7 +30,7 @@ return {
 
     Alert = {
         code = '10-66',
-        title = 'Suspected drug deal',
+        title = '疑似毒品交易',
         sprite = 51,
         colour = 1,
         scale = 1.0,

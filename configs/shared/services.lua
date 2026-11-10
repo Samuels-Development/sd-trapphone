@@ -5,11 +5,11 @@ return {
     MoneyWash = {
         Enabled = true,
         Interaction = 'target', -- 'target' (bridge target on the attendant) or 'zone' (press E in a marker)
-        Blip = { sprite = 500, colour = 2, scale = 0.7, label = 'Laundry' },
+        Blip = { sprite = 500, colour = 2, scale = 0.7, label = '洗衣房' },
     },
     BlackMarket = {
         Enabled = true,
         Interaction = 'target',
-        Blip = { sprite = 110, colour = 1, scale = 0.7, label = 'Back room' },
+        Blip = { sprite = 110, colour = 1, scale = 0.7, label = '后屋' },
     },
 }
