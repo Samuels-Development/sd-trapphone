@@ -90,6 +90,7 @@ Each colour is its own item. The item decides the faceplate on screen and the mo
 | Target | ox_target, qb-target, qtarget |
 | Dispatch | linden_outlawalert, cd_dispatch, fd_dispatch, ps-dispatch, qs-dispatch, core_dispatch, origen_police, codem-dispatch, tk_dispatch |
 | Phone | [sd-phone](https://github.com/Samuels-Development/sd-phone), optional: two-way texts |
+| Languages | English, Simplified Chinese (`Locale` in `configs/config.lua`). Customer texts and names are set in `configs/` |
 
 Per-phone progress needs an inventory that can store item metadata. On one that cannot, progress is kept per character instead.
 
