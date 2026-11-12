@@ -4,7 +4,7 @@ lua54 'yes'
 
 name 'sd-trapphone'
 author 'Samuel#0008'
-version '1.0.0'
+version '1.0.1'
 description 'Trap Phone - a keypad burner that runs a street business: corner sales, drop-offs, plugs, turf'
 
 shared_scripts {
