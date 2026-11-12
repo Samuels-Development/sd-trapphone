@@ -45,7 +45,8 @@
     },
     "messages": {
       "empty": "No messages yet. Start serving from Hustle and the texts will come.",
-      "none_yet": "Nothing here yet."
+      "none_yet": "Nothing here yet.",
+      "now": "now"
     },
     "offer": {
       "accept": "Accept",

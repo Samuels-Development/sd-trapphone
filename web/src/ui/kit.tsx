@@ -231,10 +231,10 @@ export function Confirm({ text, detail }: { text: string; detail?: string }) {
 
 export const money = (n: number): string => `$${Math.round(n).toLocaleString('en-US')}`;
 
-/** "now", "5m", "2h", "3d": how long ago a server timestamp was. */
-export function ago(ts: number, now: number): string {
+/** "now", "5m", "2h", "3d": how long ago a server timestamp was. `justNow` is the translated "now". */
+export function ago(ts: number, now: number, justNow = 'now'): string {
   const s = Math.max(0, now - ts);
-  if (s < 60) return 'now';
+  if (s < 60) return justNow;
   if (s < 3600) return `${Math.floor(s / 60)}m`;
   if (s < 86400) return `${Math.floor(s / 3600)}h`;
   return `${Math.floor(s / 86400)}d`;

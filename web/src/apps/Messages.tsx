@@ -31,7 +31,7 @@ export function Messages() {
       key: th.number,
       label: th.name,
       sub: last ? `${last.from === 'me' ? t('ui.you') + ': ' : ''}${last.text}` : '',
-      right: ago(th.ts, now),
+      right: ago(th.ts, now, t('ui.messages.now')),
       dot: th.unread > 0,
     };
   });
@@ -181,7 +181,7 @@ export function ThreadView({ number }: { number: string }) {
           <div key={m.id} className={`bubble${m.from === 'me' ? ' bubble-me' : ''}`}>
             {m.text}
             {m.offer && <Ticket offer={m.offer} now={now} />}
-            <span className="bubble-time">{ago(m.ts, now)}</span>
+            <span className="bubble-time">{ago(m.ts, now, t('ui.messages.now'))}</span>
           </div>
         ))}
         {count === 0 && <p className="empty">{t('ui.messages.none_yet')}</p>}
